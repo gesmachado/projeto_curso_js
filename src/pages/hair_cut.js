@@ -8,7 +8,7 @@
 function HairCut() {
     return (
       <div>
-          <h1>Cortes</h1>
+          <h1>Cortes Teste</h1>
       </div>
     );
   }
