@@ -33,7 +33,7 @@ function App() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/haircut">Cortes</Nav.Link>
+                  <Nav.Link href="/haircut">Cortes e Serviços</Nav.Link>
                   <Nav.Link href="/courses">Cursos</Nav.Link>
                   <Nav.Link href="/products">Produtos</Nav.Link>
                   <Nav.Link href="/about">Sobre</Nav.Link>
