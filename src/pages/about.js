@@ -5,7 +5,6 @@
 // Telefone
 // Endereço
 
-
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
@@ -42,5 +41,7 @@ const BarberShop = () => {
 };
 
 export default BarberShop;
+
+
 
 
