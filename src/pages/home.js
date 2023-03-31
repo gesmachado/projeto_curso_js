@@ -4,7 +4,6 @@
 // - Rodapé (extra)
 
 import React from "react";
-import background from "../img/img_home.jpg";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -14,16 +13,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div style={{ 
-                  backgroundImage:`url(${background})`, 
-                  backgroundRepeat:"no-repeat",
-                  backgroundSize:"cover",
-                  width: '100vw',
-                  height: '100vh'   ,
-                  backgroundPosition: 'center',
-                  opacity: 1, 
-                }}>
-
+    <div>
       <Container>
         <Row>
           <Col>
