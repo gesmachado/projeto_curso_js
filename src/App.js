@@ -10,7 +10,15 @@ function App() {
       <>
         <Navbar bg="light" expand={false} className="mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Os Programadores</Navbar.Brand>
+            <Navbar.Brand href="/">
+              <img
+                src="https://cdn.discordapp.com/attachments/1090680478299852801/1090704539482603541/Logo_Barber_Shop.png"
+                width="150"
+                height="100"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+              />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-false`}
@@ -25,7 +33,7 @@ function App() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/haircut">Cortes</Nav.Link>
+                  <Nav.Link href="/haircut">Cortes e Serviços</Nav.Link>
                   <Nav.Link href="/courses">Cursos</Nav.Link>
                   <Nav.Link href="/products">Produtos</Nav.Link>
                   <Nav.Link href="/about">Sobre</Nav.Link>
@@ -37,7 +45,7 @@ function App() {
 
         <div className='page-content'/>
         <Main/>
-    </>
+      </>
     </div>
   );
 }

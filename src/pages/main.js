@@ -7,15 +7,15 @@ import Courses from "./courses";
 import Products from "./products";
 
 const Main = () => (
-    <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/about" element={<About/>}/>
-        <Route exact path="/courses" element={<Courses/>}/>
-        <Route exact path="/haircut" element={<HairCut/>}/>
-        <Route exact path="/products" element={<Products/>}/>
+  <Routes>
+    <Route exact path="/" element={<Home/>}/>
+    <Route exact path="/about" element={<About/>}/>
+    <Route exact path="/courses" element={<Courses/>}/>
+    <Route exact path="/haircut" element={<HairCut/>}/>
+    <Route exact path="/products" element={<Products/>}/>
 
 
-    </Routes>
+  </Routes>
 )
 
 export default Main;
