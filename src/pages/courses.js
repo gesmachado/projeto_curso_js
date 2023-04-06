@@ -19,7 +19,7 @@ function Courses() {
         <Row><h1>Cursos</h1></Row>
         <Row>
           <Col>
-            <Table striped>
+            <Table striped variant="dark">
               <thead>
                 <tr>
                   <th>Nome</th>
@@ -66,17 +66,18 @@ function Courses() {
             <Form.Group>
               <Form.Label>Curso</Form.Label>
               <Form.Select aria-label="Default select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option>Selecione uma opção</option>
+                <option value="1">Curso de corte padrão</option>
+                <option value="2">Curso de corte infantil</option>
+                <option value="3">Curso de Tonalização</option>
+                <option value="4">Curso de barba</option>
               </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Outros</Form.Label>
               <Form.Control as="textarea" rows={3} placeholder="Digite alguma outra informação relevantes e existir"/>
             </Form.Group>
-            <Button type="submit">Submit form</Button>
+            <Button variant="dark" type="submit">Submit form</Button>
           </Form>
         </Row>
       </Container>

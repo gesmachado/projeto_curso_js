@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import background from "./img/background1.png";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -6,7 +7,17 @@ import Main from './pages/main';
 
 function App() {
   return (
-    <div>
+    <div
+      style={{ 
+        backgroundImage:`url(${background})`, 
+        backgroundRepeat:"no-repeat",
+        backgroundSize:"cover",
+        width: '100vw',
+        height: '100vh'   ,
+        backgroundPosition: 'center',
+        opacity: 1, 
+      }}
+    >
       <>
         <Navbar bg="light" expand={false} className="mb-3">
           <Container fluid>

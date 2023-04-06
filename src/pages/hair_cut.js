@@ -11,6 +11,7 @@ import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
+
 function HairCut() {
   return (
     <div>
@@ -18,7 +19,7 @@ function HairCut() {
         <Row> <h1>Cortes e Serviços</h1></Row>
         <Row>
           <Col>
-            <Table striped>
+            <Table striped variant="dark">
               <thead>
                 <tr>
                   <th>Serviço</th>
@@ -51,7 +52,7 @@ function HairCut() {
           <Col>
             <CardGroup>
               <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Img variant="top" src="https://cdn.discordapp.com/attachments/1090680478299852801/1091410758262337626/145098994_3089237484662140_2139110834765148066_n.png" />
                 <Card.Body>
                   <Card.Title>Gustavo Machado</Card.Title>
                   <Card.Text>
@@ -64,7 +65,7 @@ function HairCut() {
                 </Card.Footer>
               </Card>
               <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Img variant="top" src="https://i.imgur.com/xLxzfqZh.jpg" />
                 <Card.Body>
                   <Card.Title>Julio</Card.Title>
                   <Card.Text>
@@ -78,7 +79,7 @@ function HairCut() {
                 </Card.Footer>
               </Card>
               <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Img variant="top" src="https://cdn.discordapp.com/attachments/1090680478299852801/1091411703020929134/ferramenta-de-cabelo-moda-e-beleza-homem-barbudo-escova-e-corte-barba-masculina-preparacao-com-tesoura-empresario-maduro-de-terno-hipster-brutal-na-barbearia-barbeiro-no-salao-de-cabeleireiro-homem-barbear_474717-67223.png" />
                 <Card.Body>
                   <Card.Title>Marcos</Card.Title>
                   <Card.Text>

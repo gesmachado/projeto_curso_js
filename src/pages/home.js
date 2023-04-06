@@ -3,27 +3,66 @@
 // - Carrosel -> Cortes, Cursos, Produtos
 // - Rodapé (extra)
 
-import React from "react";
-import background from "../img/img_home.jpg";
+import React, { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
+import BootstrapTable from 'react-bootstrap-table-next';
+import paginationFactory from 'react-bootstrap-table2-paginator';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+
 
 function Home() {
-  return (
-    <div style={{ 
-                  backgroundImage:`url(${background})`, 
-                  backgroundRepeat:"no-repeat",
-                  backgroundSize:"cover",
-                  width: '100vw',
-                  height: '100vh'   ,
-                  backgroundPosition: 'center',
-                  opacity: 1, 
-                }}>
+  const [vetor, setVetor] = useState([]);
 
+  useEffect(() => {
+    obterDados();
+  })
+
+  const obterDados = async () => {
+      const dados = await fetch('https://jsonplaceholder.typicode.com/users');
+      const converter = await dados.json();
+      setVetor(converter);
+  }
+  const columns = [
+    {
+      dataField: 'name',
+      text: 'Nome'
+    },
+    {
+      dataField: 'username',
+      text: 'Username'
+    },
+    {
+      dataField: 'email',
+      text: 'Email'
+    },
+    {
+      dataField: 'phone',
+      text: 'Telefone'
+    }
+  ];
+
+  const paginationOptions = {
+    sizePerPage: 5,
+    hideSizePerPage: true,
+    hidePageListOnlyOnePage: true
+  };
+  
+
+  return (
+    <div>
+      <BootstrapTable
+      bootstrap4
+      keyField="id"
+      data={vetor}
+      columns={columns}
+      pagination={paginationFactory(paginationOptions)}
+    />
       <Container>
         <Row>
           <Col>
